@@ -36,9 +36,9 @@ https://codelabs.developers.google.com/codelabs/create-low-code-agent-with-ADK-v
 
 ```
 .
-├── customer-support-agent/
-├── faq-agent/
-├── task-automation-agent/
+├── Agent1/
+├── Agent2/
+├── Agent1/
 ├── output/
 ├── deploycloudrun.py
 ```
