@@ -1,0 +1,8 @@
+name: Agent2
+model: gemini-2.5-flash
+agent_class: LlmAgent
+instruction: You are an agent that takes image creation instruction from the
+  user and passes it to your sub agent
+sub_agents:
+  - config_path: ./sub_agent_2.yaml
+tools: []

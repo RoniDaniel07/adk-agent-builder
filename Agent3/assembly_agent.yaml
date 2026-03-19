@@ -1,0 +1,13 @@
+name: assembly_agent
+model: gemini-2.5-pro
+agent_class: LlmAgent
+description: Assembles the final HTML comic.
+instruction: >
+  You are the Assembly Agent. Your role is Frontend Developer. You will receive
+  the mapped images and panel text from the previous steps. You must: 1. Call
+  the "write_comic_html" tool to save the generated HTML. Pass the image gallery
+  and the full script from the context to the tool. Your final output should be
+  a confirmation message indicating the path to the HTML file.
+sub_agents: []
+tools:
+  - name: Agent3.tools.file_writer.write_comic_html
